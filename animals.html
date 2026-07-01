@@ -1,0 +1,1027 @@
+ <!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="A zoo website full of amazing animals and trips.">
+        <title>Zoo Website</title>
+        <link rel="stylesheet" href="./styles.css">
+    </head>
+    <body>
+        <header>
+            <h1 id="title">WildPath Zoo</h1>
+            <nav class="navigation">
+                <a href="./index.html#buy-tickets">Buy Ticket</a>
+                <button id="sign-inBtn">Sign-in</button>
+            </nav>
+        <dialog class="log-in">
+            <form>
+            <div class="sign-in">
+              <h2>Sign-in Form</h2>
+              <p class="green"><span aria-hidden="true">*</span>All fields are required to sign-in</p>
+              <label for="first-name">First Name:</label>
+              <input id="first-name" name="first-name" type="text" required>
+              <label for="last-name">Last Name:</label>
+              <input id="last-name" name="last-name" type="text" required>
+              <label for="mail">Email:</label>
+              <input type="email" id="mail" name="mail" required>
+              <button type="submit" id="sign-in">Sign-in</button>
+              <button class="closeBtn">Close</button>
+              <p>Don't have an accout <span class="green create-account">Create Account</span></p>
+            </div>
+            </form>
+        </dialog>
+
+        <dialog class="log-up">
+            <form>
+            <div class="sign-up">
+              <h2>Sign-up Form</h2>
+              <p class="green"><span aria-hidden="true">*</span> All fields are required to sign-up</p>
+              <label for="first-name">First Name:</label>
+              <input id="first-name" name="first-name" type="text" required>
+              <label for="last-name">Last Name:</label>
+              <input id="last-name" name="last-name" type="text" required>
+              <label for="mail">Email:</label>
+              <input type="email" id="mail" name="mail" required>
+              <button type="submit" id="sign-up">Sign-up</button>
+              <button class="closeBtn">Close</button>
+              <p >Already have an accout <span class="green accountCreated">Sign-in</span></p>
+            </div>
+            </form>
+        </dialog>
+
+        </header>
+
+        <select class="filter">
+            <option value="all" id="all">All</option>
+            <option value="mammals" id="mammals">Mammals</option>
+            <option value="reptiles" id="reptiles">Reptiles</option>
+            <option value="birds" id="birds">Birds</option>
+            <option value="insects" id="insects">Insects</option>
+            <option value="arachnids" id="arachnids">Arachnids</option>
+
+        </select>
+    <section class="animals-6">
+        <section class="animal-card">
+            <div class="card " data-category="mammals">
+                <figure>
+                <img src="./images/lion (1).jpg" alt="lion">
+                <figcaption>Lion</figcaption>
+                <p>Lions are mammals and carnivore. They live mostly in African savsannas,grasslands and openwoodland
+                    They live 10-15 years in average in wild but more in zoo.
+                </p>
+                <button class="read-more">Read More</button>
+                </figure>
+            </div>
+            <dialog  class="animal-details">
+                <img src="./images/lion (1).jpg" alt="lion">
+                <figcaption>Lion</figcaption>
+                <div class="information">
+                    <p><span class="bold">Type:</span> Mammals</p>
+                    <p><span class="bold">Group:</span> Big Cats</p>
+                    <p><span class="bold">Habitat:</span> African savannas, grasslands, open woodland</p>
+                    <p><span class="bold">Diet:</span> Carnivore (meat eaters)</p>
+                    <p><span class="bold">Average Lifespan:</span> 10-14 years in wild, longer in zoo</p>
+                    <p><span class="bold">Size:</span> 120-250 kg</p>
+                    <p><span class="bold">Fun Fact:</span> A lion's mane can make it look larger and may signal age and health.</p>
+                    <h3>
+                        Basic Information
+                    </h3>
+                    <ul>
+                        <li>Lions live in social groups called <strong>prides</strong>.</li>
+                        <li>A pride usually contains females, cubs, and a few males.</li>
+                        <li>Females usually do most hunting.</li>
+                    </ul>
+                    <h3>
+                        Adaptations
+                    </h3>
+                    <ul>
+                        <li>Strong night vision.</li>
+                        <li>Sharp retractable claws.</li>
+                        <li>Roaring helps defend territory.</li>
+                    </ul>
+                </div>
+              <button class="close">Close</button>
+
+            </dialog>
+
+
+            <div class="card " data-category="mammals">
+                <figure>
+                <img src="./images/elephant (1).jpg" alt="elephant">
+                <figcaption>Elephant</figcaption>
+                <p>Elephants are mammals and herbivore. They live mostly in  savsannas and forests.
+                    They live around 60-70 years in average.
+                </p>
+                <button class="read-more">Read More</button>
+                </figure>
+            </div>
+            <dialog  class="animal-details">
+                <img src="./images/elephant (1).jpg" alt="elephant">
+                <figcaption>Elephant</figcaption>
+                <div class="information">
+                    <p><span class="bold">Type:</span> Mammals</p>
+                    <p><span class="bold">Habitat:</span> Savannas and forests</p>
+                    <p><span class="bold">Diet:</span> Herbivore</p>
+                    <p><span class="bold">Average Lifespan:</span>Around 60-70 years</p>
+                    <p><span class="bold">Size:</span> 120-250 kg</p>
+                    <p><span class="bold">Fun Fact:</span> Elephants communicate through low-frequency sounds over long distances.</p>
+                    <h3>
+                        Basic Information
+                    </h3>
+                    <ul>
+                        <li>Largest land animal. </li>
+                        <li>Lives in family groups led by older females.</li>
+                    </ul>
+                    <h3>
+                        Adaptations
+                    </h3>
+                    <ul>
+                        <li>Trunk used for breathing, grabbing food, drinking.</li>
+                        <li>Large ears help cool body temperature.</li>
+                    </ul>
+                </div>
+              <button class="close">Close</button>
+            </dialog>
+
+
+            <div class="card " data-category="birds">
+                <figure>
+                <img src="./images/penguine (1).jpg" alt="Penguin">
+                <figcaption>Penguin</figcaption>
+                <p>Penguins are birds and eat fish. They live mostly in Antarctic regions.
+                    They live around 15-20 years.
+                </p>
+                <button class="read-more">Read More</button>
+                </figure>
+            </div>
+            <dialog  class="animal-details">
+                <img src="./images/penguine (1).jpg" alt="Penguin">
+                <figcaption>Penguin</figcaption>
+                <div class="information">
+                    <p><span class="bold">Type:</span> Birds</p>
+                    <p><span class="bold">Habitat:</span>Antarctic regions</p>
+                    <p><span class="bold">Diet:</span> Fish ,squid and krill</p>
+                    <p><span class="bold">Average Lifespan:</span> Around 15-20 years</p>
+                    <p><span class="bold">Size:</span> 120-250 kg</p>
+                    <p><span class="bold">Fun Fact:</span> Emperor penguin fathers help protect eggs during harsh winter conditions.</p>
+                    <h3>
+                        Basic Information
+                    </h3>
+                    <ul>
+                        <li>Penguins cannot fly but are excellent swimmers.</li>
+                        <li>They live in large colonies.</li>
+                    </ul>
+                    <h3>
+                        Adaptations
+                    </h3>
+                    <ul>
+                        <li>Dense waterproof feathers.</li>
+                        <li>Thick fat layer for insulation.</li>
+                    </ul>
+
+                </div>
+              <button class="close">Close</button>
+
+            </dialog>
+
+            <div class="card " data-category="mammals">
+                <figure>
+                <img src="./images/girrafe (1).jpg" alt="girafe">
+                <figcaption>Giraffe</figcaption>
+                <p>Giraffes are mammals and herbivore. They live mostly in African savsannas.
+                    They live 20-25 years in average in wild but 25-30 years in zoo.
+                </p>
+                <button class="read-more">Read More</button>
+                </figure>
+            </div>
+            <dialog  class="animal-details">
+                <img src="./images/girrafe (1).jpg" alt="giraffe">
+                <figcaption>Lion</figcaption>
+                <div class="information">
+                    <p><span class="bold">Type:</span> Mammals</p>
+                    <p><span class="bold">Group:</span> Giraffids</p>
+                    <p><span class="bold">Habitat:</span> African savannas</p>
+                    <p><span class="bold">Diet:</span> Herbivoore</p>
+                    <p><span class="bold">Average Lifespan:</span> 20-25 years in wild, 25-30 years in zoo</p>
+                    <p><span class="bold">Size:</span> 700-1900 kg based on sex</p>
+                    <p><span class="bold">Fun Fact:</span> A giraffe’s tongue can be about 45–50 cm long.</p>
+                    <h3>
+                        Basic Information
+                    </h3>
+                    <ul>
+                        <li>Tallest land animal.</li>
+                        <li>Long neck helps reach high branches.</li>
+                    </ul>
+                    <h3>
+                        Adaptations
+                    </h3>
+                    <ul>
+                        <li>Long tongue protects against thorny plants.</li>
+                        <li>Specialized heart pumps blood to the brain.</li>
+                    </ul>
+                </div>
+              <button class="close">Close</button>
+
+            </dialog>
+
+
+            <div class="card " data-category="mammals">
+                <figure>
+                <img src="./images/zebra (1).jpg" alt="zebra">
+                <figcaption>Zebra</figcaption>
+                <p>Zebras are mammals and herbivore. They live mostly in grasslands.
+                    They live 20-25 years wild, 25-30 years in zoo.
+                </p>
+                <button class="read-more">Read More</button>
+                </figure>
+            </div>
+            <dialog  class="animal-details">
+                <img src="./images/zebra (1).jpg" alt="zebra">
+                <figcaption>Zebra</figcaption>
+                <div class="information">
+                    <p><span class="bold">Type:</span> Mammals</p>
+                    <p><span class="bold">Group:</span> Equids (horse family)</p>
+                    <p><span class="bold">Habitat:</span> Grasslands</p>
+                    <p><span class="bold">Diet:</span> Herbivore </p>
+                    <p><span class="bold">Average Lifespan:</span> 20-25 years in wild, 25-30 years in zoo</p>
+                    <p><span class="bold">Size:</span> About 350 kg</p>
+                    <p><span class="bold">Fun Fact:</span> Each zebra has unique stripes just likde human fingerprints.</p>
+                    <h3>
+                        Basic Information
+                    </h3>
+                    <ul>
+                        <li>Related to horses.</li>
+                        <li>Lives in groups for protection..</li>
+                    </ul>
+                    <h3>
+                        Adaptations
+                    </h3>
+                    <ul>
+                        <li>Strong legs for running.</li>
+                        <li>Stripes may confuse predators.</li>
+                    </ul>
+                </div>
+              <button class="close">Close</button>
+
+            </dialog>
+
+
+            <div class="card " data-category="mammals">
+                <figure>
+                <img src="./images/hippopotamus (1).jpg" alt="hippopotamus">
+                <figcaption>Hippopotamus</figcaption>
+                <p>Hippopotamus are mammals and herbivore. They live mostly in rivers and lakes.
+                    They live 35-40 years in wild, 40-50 years in zoo.
+                </p>
+                <button class="read-more">Read More</button>
+                </figure>
+            </div>
+            <dialog  class="animal-details">
+                <img src="./images/hippopotamus (1).jpg" alt="hippopotamus">
+                <figcaption>Hippopotamus</figcaption>
+                <div class="information">
+                    <p><span class="bold">Type:</span> Mammals</p>
+                    <p><span class="bold">Group:</span> Hippopotamids (large semi-aquatic hoofed mammals)</p>
+                    <p><span class="bold">Habitat:</span> Rivers and Lakes</p>
+                    <p><span class="bold">Diet:</span> Herbivore</p>
+                    <p><span class="bold">Average Lifespan:</span> 35-40 years in wild, 40-50 years in zoo</p>
+                    <p><span class="bold">Size:</span> About 2000 kg</p>
+                    <p><span class="bold">Fun Fact:</span> Hippos produce a reddish skin secretion sometimes nicknamed “blood sweat.”</p>
+                    <h3>
+                        Basic Information
+                    </h3>
+                    <ul>
+                        <li>Spends much of the day in water.</li>
+                        <li>Comes onto land mostly at night.</li>
+                    </ul>
+                    <h3>
+                        Adaptations
+                    </h3>
+                    <ul>
+                        <li>Eyes and nostrils positioned high on head.</li>
+                    </ul>
+                </div>
+              <button class="close">Close</button>
+
+            </dialog>
+
+
+        </section>
+        <button class="show-more">Show More</button>
+    </section>
+    <section  class="animals-12">
+               <section class="animal-card">
+            <div class="card" data-category="mammals">
+                <figure>
+                <img src="./images/tiger (1).jpg" alt="tiger">
+                <figcaption>Tiger</figcaption>
+                <p>Tigers are mammals and carnivore. They live mostly in forests,grasslands and mangroves.
+                    They live 10-15 years in average in wild but 20-26 years in zoo.
+                </p>
+                <button class="read-more">Read More</button>
+                </figure>
+            </div>
+            <dialog  class="animal-details">
+                <img src="./images/tiger (1).jpg" alt="tiger">
+                <figcaption>Tiger</figcaption>
+                <div class="information">
+                    <p><span class="bold">Type:</span> Mammals</p>
+                    <p><span class="bold">Group:</span> Big Cats</p>
+                    <p><span class="bold">Habitat:</span> forests,grasslands and mangroves</p>
+                    <p><span class="bold">Diet:</span> Carnivore (meat eaters)</p>
+                    <p><span class="bold">Average Lifespan:</span> 10-15 years in wild, 20-26 years in zoo</p>
+                    <p><span class="bold">Size:</span> about 190 kg</p>
+                    <p><span class="bold">Fun Fact:</span> Even a tiger’s skin has stripe patterns.</p>
+                    <h3>
+                        Basic Information
+                    </h3>
+                    <ul>
+                        <li>Tigers are mostly <strong>solitary animals</strong>.</li>
+                        <li>They are excellent swimmers.</li>
+                    </ul>
+                    <h3>
+                        Adaptations
+                    </h3>
+                    <ul>
+                        <li>Stripes help camouflage in tall grass.</li>
+                        <li>Powerful back legs for jumping.</li>
+                    </ul>
+                </div>
+              <button class="close">Close</button>
+
+            </dialog>
+
+
+            <div class="card" data-category="mammals">
+                <figure>
+                <img src="./images/rhiniseros (1).jpg" alt="Rhinoceros">
+                <figcaption>Rhinoceros</figcaption>
+                <p>Rhinoceros are mammals and herbivore. They live mostly in grasslands.
+                    They live around 35-40 years in wild and 40-50 years in zoo.
+                </p>
+                <button class="read-more">Read More</button>
+                </figure>
+            </div>
+            <dialog  class="animal-details">
+                <img src="./images/rhiniseros (1).jpg" alt="Rhinoceros">
+                <figcaption>Rhinoceros</figcaption>
+                <div class="information">
+                    <p><span class="bold">Type:</span> Mammals</p>
+                    <p><span class="bold">Group:</span> Rhinocerotidae</p>                  
+                    <p><span class="bold">Habitat:</span> Grasslands</p>
+                    <p><span class="bold">Diet:</span> Herbivore</p>
+                    <p><span class="bold">Average Lifespan:</span>Around 35-40 years in wild and 40-50 years in zoo</p>
+                    <p><span class="bold">Size:</span> About 2000 kg</p>
+                    <p><span class="bold">Fun Fact:</span> Rhino horns are made mainly of keratin—the same material as human nails.</p>
+                    <h3>
+                        Basic Information
+                    </h3>
+                    <ul>
+                        <li>Has thick protective skin.</li>
+                        <li>Usually peaceful but can charge if threatened.</li>
+                    </ul>
+                    <h3>
+                        Adaptations
+                    </h3>
+                    <ul>
+                        <li>Excellent sense of smell.</li>
+                    </ul>
+                </div>
+              <button class="close">Close</button>
+            </dialog>
+
+
+            <div class="card" data-category="mammals">
+                <figure>
+                <img src="./images/gorilla (1).jpg" alt="Gorilla">
+                <figcaption>Gorilla</figcaption>
+                <p>Gorillas are mammals and herbivore. They live mostly in Tropic forests.
+                    They live around 35-40 years in wild and 45-50 years in zoo.
+                </p>
+                <button class="read-more">Read More</button>
+                </figure>
+            </div>
+            <dialog  class="animal-details">
+                <img src="./images/gorilla (1).jpg" alt="Gorilla">
+                <figcaption>Gorilla</figcaption>
+                <div class="information">
+                    <p><span class="bold">Type:</span> Mammals</p>
+                    <p><span class="bold">Group:</span> Great apes  family Hominidae (primate mammals)</p>                   
+                    <p><span class="bold">Habitat:</span>Tropical forests</p>
+                    <p><span class="bold">Diet:</span> Mostly eat plants</p>
+                    <p><span class="bold">Average Lifespan:</span> Around 35-40 years in wild and 45-50 years in zoo</p>
+                    <p><span class="bold">Size:</span> About 140 kg</p>
+                    <p><span class="bold">Fun Fact:</span> Gorillas can learn sign-based communication systems.</p>
+                    <h3>
+                        Basic Information
+                    </h3>
+                    <ul>
+                        <li>Largest living primate</li>
+                        <li>Lives in family groups.</li>
+                    </ul>
+                    <h3>
+                        Adaptations
+                    </h3>
+                    <ul>
+                        <li>Strong arms for climbing.</li>
+                        <li>Intelligent social behavior.</li>
+                    </ul>
+
+                </div>
+              <button class="close">Close</button>
+
+            </dialog>
+
+            <div class="card" data-category="mammals">
+                <figure>
+                <img src="./images/champenzee (1).jpg" alt="Chimpanzee">
+                <figcaption>Chimpanzee</figcaption>
+                <p>Chimpanzees are mammals and omnivore. They live mostly in forests and woodlands.
+                    They live 33-40 years in average in wild but 45-60 years in zoo.
+                </p>
+                <button class="read-more">Read More</button>
+                </figure>
+            </div>
+            <dialog  class="animal-details">
+                <img src="./images/champenzee (1).jpg" alt="Chimpanzee">
+                <figcaption>Chimpanzee</figcaption>
+                <div class="information">
+                    <p><span class="bold">Type:</span> Mammals</p>
+                    <p><span class="bold">Group:</span> Great apes family Hominidae (primate mammals)</p>
+                    <p><span class="bold">Habitat:</span> Forests and woodland</p>
+                    <p><span class="bold">Diet:</span> Omnivore </p>
+                    <p><span class="bold">Average Lifespan:</span> 33-40 years in average in wild but 45-60 years in zoo</p>
+                    <p><span class="bold">Size:</span> about 45 kg</p>
+                    <p><span class="bold">Fun Fact:</span> Chimpanzees show complex social behavior and cooperation.</p>
+                    <h3>
+                        Basic Information
+                    </h3>
+                    <ul>
+                        <li>Highly intelligent.</li>
+                        <li>Uses sticks and stones as tools.</li>
+                    </ul>
+                    <h3>
+                        Adaptations
+                    </h3>
+                    <ul>
+                        <li>Opposable thumbs for gripping.</li>
+                    </ul>
+                </div>
+              <button class="close">Close</button>
+
+            </dialog>
+
+
+            <div class="card" data-category="mammals">
+                <figure>
+                <img src="./images/red panda (1).jpg" alt="Red Panda">
+                <figcaption>Red Panda</figcaption>
+                <p>Red Pandas are mammals and herbivore. They live mostly in mountain forests.
+                     They live 8-10 years in average in wild but 12-15 years in zoo.
+                </p>
+                <button class="read-more">Read More</button>
+                </figure>
+            </div>
+            <dialog  class="animal-details">
+                <img src="./images/red panda (1).jpg" alt="Red Panda">
+                <figcaption>Red Panda</figcaption>
+                <div class="information">
+                    <p><span class="bold">Type:</span> Mammals</p>
+                    <p><span class="bold">Group:</span> Ailurids</p>
+                    <p><span class="bold">Habitat:</span> Mountain forests</p>
+                    <p><span class="bold">Diet:</span> Mostly eat bamboo</p>
+                    <p><span class="bold">Average Lifespan:</span> About 8-10 years in average in wild but 12-15 years in zoo </p>
+                    <p><span class="bold">Size:</span> About 5 kg</p>
+                    <p><span class="bold">Fun Fact:</span> Red pandas wrap their tails around themselves to stay warm.</p>
+                    <h3>
+                        Basic Information
+                    </h3>
+                    <ul>
+                        <li>Not closely related to giant pandas.</li>
+                        <li>Excellent climber.</li>
+                    </ul>
+                    <h3>
+                        Adaptations
+                    </h3>
+                    <ul>
+                        <li>Thick fur for cold climates.</li>
+                        <li>Bushy tail for balance.</li>
+                    </ul>
+                </div>
+              <button class="close">Close</button>
+
+            </dialog>
+
+
+            <div class="card" data-category="mammals">
+                <figure>
+                <img src="./images/koala (1).jpg" alt="Koala">
+                <figcaption>Koala</figcaption>
+                <p>Koalas are mammals and herbivore. They live mostly in Eucalyptus forests in Australia.
+                    They live 10-15 years in average in wild but 15-20 years in zoo.
+                </p>
+                <button class="read-more">Read More</button>
+                </figure>
+            </div>
+            <dialog  class="animal-details">
+                <img src="./images/koala (1).jpg" alt="Koala">
+                <figcaption>Koala</figcaption>
+                <div class="information">
+                    <p><span class="bold">Type:</span> Mammals</p>
+                    <p><span class="bold">Group:</span> Marsupial</p>
+                    <p><span class="bold">Habitat:</span> Eucalyptus forests in Australia</p>
+                    <p><span class="bold">Diet:</span> Herbivore </p>
+                    <p><span class="bold">Average Lifespan:</span> About 10-15 years in average in wild but 15-20 years in zoo</p>
+                    <p><span class="bold">Size:</span> About 9 kg</p>
+                    <p><span class="bold">Fun Fact:</span> Koalas have fingerprints that look surprisingly similar to humans'.</p>
+                    <h3>
+                        Basic Information
+                    </h3>
+                    <ul>
+                        <li>Koalas spend most of life in trees.</li>
+                        <li>They sleep many hours because their diet provides limited energy.</li>
+                    </ul>
+                    <h3>
+                        Adaptations
+                    </h3>
+                    <ul>
+                        <li>Specialized digestive system.</li>
+                        <li>Sharp claws for climbing..</li>
+                    </ul>
+                </div>
+              <button class="close">Close</button>
+
+            </dialog>
+
+
+        </section>
+        <button class="show-more">Show More</button>
+        <button class="show-less">Show Less</button>
+    </section>
+
+   <section  class="animals-18">
+        <section class="animal-card">
+            <div class="card" data-category="birds">
+                <figure>
+                <img src="./images/flamingo (1).jpg" alt="Flamingo">
+                <figcaption>Flamingo</figcaption>
+                <p>Flamingos are birds and eat small aquatic organisms and algae. They live mostly in Lakes, wetlands, lagoons.
+                    They live 20-30 years in average in wild but 30-50 years in zoo.
+                </p>
+                <button class="read-more">Read More</button>
+                </figure>
+            </div>
+            <dialog  class="animal-details">
+                <img src="./images/flamingo (1).jpg" alt="Flamingo">
+                <figcaption>Flamingo</figcaption>
+                <div class="information">
+                    <p><span class="bold">Type:</span> Birds</p>
+                    <p><span class="bold">Group:</span> Wading birds  family Phoenicopteridae</p>
+                    <p><span class="bold">Habitat:</span> Lakes, wetlands, lagoons</p>
+                    <p><span class="bold">Diet:</span> Eat small aquatic organisms and algae</p>
+                    <p><span class="bold">Average Lifespan:</span> 20-30 years in wild, 30-50 years in zoo</p>
+                    <p><span class="bold">Size:</span> about 3 kg</p>
+                    <p><span class="bold">Fun Fact:</span> Young flamingos are born gray and develop pink coloring over time.</p>
+                    <h3>
+                        Basic Information
+                    </h3>
+                    <ul>
+                        <li>Flamingos are social birds.</li>
+                        <li>They often stand on one leg.</li>
+                    </ul>
+                    <h3>
+                        Adaptations
+                    </h3>
+                    <ul>
+                        <li>Specialized beaks filter food from water.</li>
+                        <li>Long legs allow movement through shallow water.</li>
+                    </ul>
+                </div>
+              <button class="close">Close</button>
+
+            </dialog>
+
+
+            <div class="card" data-category="birds">
+                <figure>
+                <img src="./images/ostrich (1).jpg" alt="Ostrich">
+                <figcaption>Ostrich</figcaption>
+                <p>Ostrichs are birds and omnivore. They live mostly in African grasslands and deserts.
+                    They live around 30-40 years in wild and 40-50 years in zoo.
+                </p>
+                <button class="read-more">Read More</button>
+                </figure>
+            </div>
+            <dialog  class="animal-details">
+                <img src="./images/ostrich (1).jpg" alt="Ostrich">
+                <figcaption>Ostrich</figcaption>
+                <div class="information">
+                    <p><span class="bold">Type:</span> Birds</p>
+                    <p><span class="bold">Group:</span> Ratites (flightless birds)  family Struthionidae</p>                  
+                    <p><span class="bold">Habitat:</span> African grasslands and deserts</p>
+                    <p><span class="bold">Diet:</span> Omnivore</p>
+                    <p><span class="bold">Average Lifespan:</span>Around 30-40 years in wild and 40-50 years in zoo</p>
+                    <p><span class="bold">Size:</span> About 110 kg</p>
+                    <p><span class="bold">Fun Fact:</span> Ostriches can run faster than many land predators.</p>
+                    <h3>
+                        Basic Information
+                    </h3>
+                    <ul>
+                        <li>Largest living bird.</li>
+                        <li>Cannot fly.</li>
+                    </ul>
+                    <h3>
+                        Adaptations
+                    </h3>
+                    <ul>
+                        <li>Long powerful legs for speed.</li>
+                        <li>Large eyes for detecting danger.</li>
+                    </ul>
+                </div>
+              <button class="close">Close</button>
+            </dialog>
+
+
+            <div class="card" data-category="reptiles">
+                <figure>
+                <img src="./images/crocodile (1).jpg" alt="Crocodile">
+                <figcaption>Crocodile</figcaption>
+                <p>Crocodiles are reptiles and carnivore. They live mostly in river, lakes and swamps.
+                    They live around 40-70 years in wild and 50-80 years in zoo.
+                </p>
+                <button class="read-more">Read More</button>
+                </figure>
+            </div>
+            <dialog  class="animal-details">
+                <img src="./images/gorilla (1).jpg" alt="Crocodile">
+                <figcaption>Crocodile</figcaption>
+                <div class="information">
+                    <p><span class="bold">Type:</span> Reptiles</p>
+                    <p><span class="bold">Group:</span> Crocodilians</p>                   
+                    <p><span class="bold">Habitat:</span>River, lakes and swamps</p>
+                    <p><span class="bold">Diet:</span> Carnivore</p>
+                    <p><span class="bold">Average Lifespan:</span> Around 40-70 years in wild and 50-80 years in zoo</p>
+                    <p><span class="bold">Size:</span> About 500 kg</p>
+                    <p><span class="bold">Fun Fact:</span> Crocodiles replace teeth repeatedly during life.</p>
+                    <h3>
+                        Basic Information
+                    </h3>
+                    <ul>
+                        <li>Crocodiles are ambush predators.</li>
+                        <li>They spend time both in water and on land.</li>
+                    </ul>
+                    <h3>
+                        Adaptations
+                    </h3>
+                    <ul>
+                        <li>Strong jaws and sensitive skin.</li>
+                        <li>Eyes and nostrils positioned for partially submerged hunting.</li>
+                    </ul>
+
+                </div>
+              <button class="close">Close</button>
+
+            </dialog>
+
+            <div class="card" data-category="reptiles">
+                <figure>
+                <img src="./images/komodo drangon (1).jpg" alt="Komodo Dragon">
+                <figcaption>Komodo Dragon</figcaption>
+                <p>Komodo Dragons are reptiles and carnivore. They live mostly in forests and dry islands.
+                    They live 25-30 years in average in wild but 30-40 years in zoo.
+                </p>
+                <button class="read-more">Read More</button>
+                </figure>
+            </div>
+            <dialog  class="animal-details">
+                <img src="./images/komodo drangon (1).jpg" alt="Komodo Dragon">
+                <figcaption>Komodo Dragon</figcaption>
+                <div class="information">
+                    <p><span class="bold">Type:</span> Reptiles</p>
+                    <p><span class="bold">Group:</span> Monitor lizards</p>
+                    <p><span class="bold">Habitat:</span> Forests and dry islands</p>
+                    <p><span class="bold">Diet:</span> Carnivore </p>
+                    <p><span class="bold">Average Lifespan:</span> about 25-30 years in average in wild but 30-40 years in zoo</p>
+                    <p><span class="bold">Size:</span> About 70 kg</p>
+                    <p><span class="bold">Fun Fact:</span> Komodo dragons can detect scents from long distances.</p>
+                    <h3>
+                        Basic Information
+                    </h3>
+                    <ul>
+                        <li>Native to a small region of Indonesia.</li>
+                        <li>Uses smell to detect prey.</li>
+                    </ul>
+                    <h3>
+                        Adaptations
+                    </h3>
+                    <ul>
+                        <li>Strong limbs and claws.</li>
+                        <li>Excellent chemical sensing with tongue.</li>
+                    </ul>
+                </div>
+              <button class="close">Close</button>
+
+            </dialog>
+
+
+            <div class="card" data-category="reptiles">
+                <figure>
+                <img src="./images/anaconda (1).jpg" alt="Anaconda">
+                <figcaption>Anaconda</figcaption>
+                <p>Anaconda are reptiles and Carnivore. They live mostly in rivers, marshes and wetlands.
+                     They live 10-15 years in average in wild but 20-30 years in zoo.
+                </p>
+                <button class="read-more">Read More</button>
+                </figure>
+            </div>
+            <dialog  class="animal-details">
+                <img src="./images/anaconda (1).jpg" alt="Anaconda">
+                <figcaption>Anaconda</figcaption>
+                <div class="information">
+                    <p><span class="bold">Type:</span> Reptiles</p>
+                    <p><span class="bold">Group:</span> Boas (boa snakes)</p>
+                    <p><span class="bold">Habitat:</span> Rivers, marshes, wetlands</p>
+                    <p><span class="bold">Diet:</span> Carnivore</p>
+                    <p><span class="bold">Average Lifespan:</span> About 10-15 years in average in wild but 20-30 years in zoo </p>
+                    <p><span class="bold">Size:</span> About 150 kg</p>
+                    <p><span class="bold">Fun Fact:</span> Their eyes and nostrils sit high on the head for swimming.</p>
+                    <h3>
+                        Basic Information
+                    </h3>
+                    <ul>
+                        <li>One of the heaviest snake species.</li>
+                        <li>Spends much time in water.</li>
+                    </ul>
+                    <h3>
+                        Adaptations
+                    </h3>
+                    <ul>
+                        <li>Flexible jaws.</li>
+                        <li>Camouflage coloring.</li>
+                    </ul>
+                </div>
+              <button class="close">Close</button>
+
+            </dialog>
+
+
+            <div class="card" data-category="reptiles">
+                <figure>
+                <img src="./images/tortoise (1).jpg" alt="Giant Tortoise">
+                <figcaption>Giant Tortoise</figcaption>
+                <p>Giant Tortoises are reptiles and herbivore. They live mostly in islands and dry forests .
+                    They live 100-150 years in average in wild but 120-170 years in zoo.
+                </p>
+                <button class="read-more">Read More</button>
+                </figure>
+            </div>
+            <dialog  class="animal-details">
+                <img src="./images/tortoise (1).jpg" alt="Giant Tortoise">
+                <figcaption>Giant Tortoise</figcaption>
+                <div class="information">
+                    <p><span class="bold">Type:</span> Reptiles</p>
+                    <p><span class="bold">Group:</span> Tortoises</p>
+                    <p><span class="bold">Habitat:</span> Islands and dry forests </p>
+                    <p><span class="bold">Diet:</span> Herbivore </p>
+                    <p><span class="bold">Average Lifespan:</span> About 100-150 years in average in wild but 120-170 years in zoo</p>
+                    <p><span class="bold">Size:</span> About 250 kg</p>
+                    <p><span class="bold">Fun Fact:</span> Some giant tortoises become over a century old.</p>
+                    <h3>
+                        Basic Information
+                    </h3>
+                    <ul>
+                        <li>Moves slowly but efficiently.</li>
+                        <li>Stores water effectively.</li>
+                    </ul>
+                    <h3>
+                        Adaptations
+                    </h3>
+                    <ul>
+                        <li>Strong shell for protection.</li>
+                    </ul>
+                </div>
+              <button class="close">Close</button>
+
+            </dialog>
+
+        <button class="show-more">Show More</button>
+        <button class="show-less">Show Less</button>
+
+        </section>
+    </section>
+ 
+ 
+   <section  class="animals-24">
+         <section class="animal-card">
+            <div class="card" data-category="mammals">
+                <figure>
+                <img src="./images/meerkat (1).jpg" alt="Meerkat">
+                <figcaption>Meerkat</figcaption>
+                <p>Meerkats are mammals and omnivore. They live mostly in deserts and dry islands.
+                    They live 6-10 years in average in wild but 12-15 years in zoo.
+                </p>
+                <button class="read-more">Read More</button>
+                </figure>
+            </div>
+            <dialog  class="animal-details">
+                <img src="./images/tiger (1).jpg" alt="tiger">
+                <figcaption>Tiger</figcaption>
+                <div class="information">
+                    <p><span class="bold">Type:</span> Mammals</p>
+                    <p><span class="bold">Group:</span> Mangoose Family</p>
+                    <p><span class="bold">Habitat:</span> Deserts and dry grasslands</p>
+                    <p><span class="bold">Diet:</span> Omnivore</p>
+                    <p><span class="bold">Average Lifespan:</span> About 6-10 years in wild, 12-15 years in zoo</p>
+                    <p><span class="bold">Size:</span> about 0.8 kg</p>
+                    <p><span class="bold">Fun Fact:</span> Meerkats teach young members how to handle prey.</p>
+                    <h3>
+                        Basic Information
+                    </h3>
+                    <ul>
+                        <li>Meerkats live in social groups called <strong>mobs</strong>.</li>
+                        <li>They work together to find food and protect young.</li>
+                    </ul>
+                    <h3>
+                        Adaptations
+                    </h3>
+                    <ul>
+                        <li>Sharp claws for digging.</li>
+                        <li>Dark patches around eyes reduce sunlight glare.</li>
+                    </ul>
+                </div>
+              <button class="close">Close</button>
+
+            </dialog>
+
+
+            <div class="card" data-category="mammals">
+                <figure>
+                <img src="./images/otter (1).jpg" alt="Otter">
+                <figcaption>Otter</figcaption>
+                <p>Otters are mammals and Carnivore. They live mostly in rivers and wetlands.
+                    They live around 8-15 years in wild and 12-25 years in zoo.
+                </p>
+                <button class="read-more">Read More</button>
+                </figure>
+            </div>
+            <dialog  class="animal-details">
+                <img src="./images/otter (1).jpg" alt="Otter">
+                <figcaption>Otter</figcaption>
+                <div class="information">
+                    <p><span class="bold">Type:</span> Mammals</p>
+                    <p><span class="bold">Group:</span> Mustelids</p>                  
+                    <p><span class="bold">Habitat:</span> Rivers and wetlands</p>
+                    <p><span class="bold">Diet:</span> Carnivore</p>
+                    <p><span class="bold">Average Lifespan:</span>Around 8-15 years in wild and 12-25 years in zoo</p>
+                    <p><span class="bold">Size:</span> About 15 kg</p>
+                    <p><span class="bold">Fun Fact:</span> Some otters use rocks as tools to break shells.</p>
+                    <h3>
+                        Basic Information
+                    </h3>
+                    <ul>
+                        <li>Otters are excellent swimmers.</li>
+                        <li>They are playful and highly social.</li>
+                    </ul>
+                    <h3>
+                        Adaptations
+                    </h3>
+                    <ul>
+                        <li>Streamlined body reduces water resistance.</li>
+                        <li>Dense fur traps warmth.</li>
+                    </ul>
+                </div>
+              <button class="close">Close</button>
+            </dialog>
+
+
+            <div class="card" data-category="insects">
+                <figure>
+                <img src="./images/butterfly (1).jpg" alt="Butterfly">
+                <figcaption>Butterfly</figcaption>
+                <p>Butterflies are insects and eat nectar. They live mostly in Meadows, gardens and forests. 
+                 They live around 2-6 weeks in wild and 2-8 weeks in zoo.
+                </p>
+                <button class="read-more">Read More</button>
+                </figure>
+            </div>
+            <dialog  class="animal-details">
+                <img src="./images/butterfly (1).jpg" alt="Butterfly">
+                <figcaption>Butterfly</figcaption>
+                <div class="information">
+                    <p><span class="bold">Type:</span> Insects</p>
+                    <p><span class="bold">Group:</span> Lepidoptera</p>                   
+                    <p><span class="bold">Habitat:</span>Meadows, gardens, forests</p>
+                    <p><span class="bold">Diet:</span> Mostly eat nectar</p>
+                    <p><span class="bold">Average Lifespan:</span> Around 2-6 weeks in wild and 2-8 weeks in zoo</p>
+                    <p><span class="bold">Size:</span> About 0.5 g</p>
+                    <p><span class="bold">Fun Fact:</span> Butterflies can sense taste through receptors on their feet.</p>
+                    <h3>
+                        Basic Information
+                    </h3>
+                    <ul>
+                        <li>Butterflies go through <strong>metamorphosis</strong>.</li>
+                        <li>Life Cycle: Egg → Caterpillar → Chrysalis → Adult</li>
+                    </ul>
+                    <h3>
+                        Adaptations
+                    </h3>
+                    <ul>
+                        <li>Large colorful wings.</li>
+                        <li>Long feeding tube (proboscis).</li>
+                    </ul>
+
+                </div>
+              <button class="close">Close</button>
+
+            </dialog>
+
+            <div class="card" data-category="insects">
+                <figure>
+                <img src="./images/ladybug (1).jpg" alt="Ladybug">
+                <figcaption>Ladybug</figcaption>
+                <p>Ladybug are insects and carnivore. They live mostly in forest edges,farms, gardens, grasslands and woodland.
+                    They live 1-2 years in average in wild but 1-3 years in zoo.
+                </p>
+                <button class="read-more">Read More</button>
+                </figure>
+            </div>
+            <dialog  class="animal-details">
+                <img src="./images/ladybug (1).jpg" alt="Ladybug">
+                <figcaption>Ladybug</figcaption>
+                <div class="information">
+                    <p><span class="bold">Type:</span> Insects</p>
+                    <p><span class="bold">Group:</span> Beetles</p>
+                    <p><span class="bold">Habitat:</span> Forest edges,farms, gardens, grasslands and woodland</p>
+                    <p><span class="bold">Diet:</span> Carnivore (insect-eater) </p>
+                    <p><span class="bold">Average Lifespan:</span> 1-2 years in average in wild but 1-3 years in zoo</p>
+                    <p><span class="bold">Size:</span> about 0.02 g</p>
+                    <p><span class="bold">Fun Fact:</span> A single ladybug can eat thousands of aphids during its lifetime.</p>
+                    <h3>
+                        Basic Information
+                    </h3>
+                    <ul>
+                        <li>Ladybugs are actually beetles, not true bugs.</li>
+                        <li>Their bright red/orange colors act as a warning to predators.</li>
+                        <li>They have 6 legs and 2 pairs of wings (hard outer wing covers and flying wings underneath).</li>
+                    </ul>
+                    <h3>
+                        Adaptations
+                    </h3>
+                    <ul>
+                        <li>The hard outer shell protects the soft flying wings underneath.</li>
+                        <li>When threatened, some ladybugs release a yellow fluid from their leg joints with an unpleasant smell and taste.</li>
+                    </ul>
+                </div>
+              <button class="close">Close</button>
+
+            </dialog>
+
+
+            <div class="card" data-category="insects">
+                <figure>
+                <img src="./images/beetle (1).jpg" alt="Beetle">
+                <figcaption>Beetle</figcaption>
+                <p>Beetle are insects and herbivore. They live mostly in tropical forests.
+                     They live 6 months -3 years in average in wild but 1-5 years in zoo.
+                </p>
+                <button class="read-more">Read More</button>
+                </figure>
+            </div>
+            <dialog  class="animal-details">
+                <img src="./images/beetle (1).jpg" alt="Beetle">
+                <figcaption>Beetle</figcaption>
+                <div class="information">
+                    <p><span class="bold">Type:</span> Insects</p>
+                    <p><span class="bold">Group:</span> Coleoptera</p>
+                    <p><span class="bold">Habitat:</span> Tropical forests</p>
+                    <p><span class="bold">Diet:</span> Mostly eat fruits and plant material</p>
+                    <p><span class="bold">Average Lifespan:</span> About 6 months-3 years in average in wild but 1-5 years in zoo </p>
+                    <p><span class="bold">Size:</span> About 5 g</p>
+                    <p><span class="bold">Fun Fact:</span> Some Hercules beetles can carry loads many times their own body weight.</p>
+                    <h3>
+                        Basic Information
+                    </h3>
+                    <ul>
+                        <li>Beetles are among the most diverse animal groups.</li>
+                    </ul>
+                    <h3>
+                        Adaptations
+                    </h3>
+                    <ul>
+                        <li>Hard wing covers protect body.</li>
+                    </ul>
+                </div>
+              <button class="close">Close</button>
+
+            </dialog>
+
+
+
+
+        </section>
+        <button class="show-less">Show Less</button>
+    </section>
+ 
+    <script src="./script.js"></script>
+    </body>
+</html>

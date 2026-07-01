@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="A zoo website full of amazing animals and trips.">
+        <title>Zoo Website</title>
+        <link rel="stylesheet" href="./styles.css">
+    </head>
+    <body>
+        <header>
+            <h1 id="title">WildPath Zoo</h1>
+            <nav class="navigation">
+                <a href="#buy-tickets">Buy Ticket</a>
+                <button id="sign-inBtn">Sign-in</button>
+            </nav>
+        <dialog class="log-in">
+            <form>
+            <div class="sign-in">
+              <h2>Sign-in Form</h2>
+              <p class="green"><span aria-hidden="true">*</span>All fields are required to sign-in</p>
+              <label for="first-name">First Name:</label>
+              <input id="first-name" name="first-name" type="text" required>
+              <label for="last-name">Last Name:</label>
+              <input id="last-name" name="last-name" type="text" required>
+              <label for="mail">Email:</label>
+              <input type="email" id="mail" name="mail" required>
+              <button type="submit" id="sign-in">Sign-in</button>
+              <button class="closeBtn">Close</button>
+              <p>Don't have an accout <span class="green create-account">Create Account</span></p>
+            </div>
+            </form>
+        </dialog>
+
+        <dialog class="log-up">
+            <form>
+            <div class="sign-up">
+              <h2>Sign-up Form</h2>
+              <p class="green"><span aria-hidden="true">*</span> All fields are required to sign-up</p>
+              <label for="first-name">First Name:</label>
+              <input id="first-name" name="first-name" type="text" required>
+              <label for="last-name">Last Name:</label>
+              <input id="last-name" name="last-name" type="text" required>
+              <label for="mail">Email:</label>
+              <input type="email" id="mail" name="mail" required>
+              <button type="submit" id="sign-up">Sign-up</button>
+              <button class="closeBtn">Close</button>
+              <p >Already have an accout <span class="green accountCreated">Sign-in</span></p>
+            </div>
+            </form>
+        </dialog>
+
+        </header>
+        <section class="hero-section">
+            <span class="orange ">YOUR WILD ADVENTURE STARTS HERE</span> <h2><span class="large">Where world's wildlife comes <span class="orange italic">alive</span></span></h2>
+            <p>Explore over 400 species across 52 acres of immersive habitats. 
+                Plan your day, catch a feeding show and go home knowing more than you arrived.</p>
+                <nav class="navigation">
+                    <a href="#buy-tickets">Get Ticket</a>
+                    <a href="./animals.html">Meet Animals</a>
+                </nav>
+                <div class="info">
+                    <span>Open daily 9am-6pm</span>
+                    <span>Family tickets starting Rs.500</span>
+                    <span>Conservation led since 2000</span>
+                </div>
+        </section>
+        <div class="banner-info">
+            <span class="large">400 +<span class="small grey">SPECIES</span></span>
+            <span class="large">52 <span class=" grey small">ACRES OF HABITAT</span></span>
+            <span class="large">18 <span class="grey small">DAILY SHOWS</span></span>
+            <span class="large">1.2 M<span class="small grey">VISITORS PER YEAR </span></span>
+        </div>
+        <section class="animals">
+            <section class="animal-card">
+            <div class="card">
+                <figure>
+                <img src="./images/lion (1).jpg" alt="lion">
+                <figcaption>Lion</figcaption>
+                <p>Lions are mammals and carnivore. They live mostly in African savsannas,grasslands and openwoodland
+                    They live 10-15 years in average in wild but more in zoo.
+                </p>
+                <button class="read-more">Read More</button>
+                </figure>
+            </div>
+            <dialog  class="animal-details">
+                <img src="./images/lion (1).jpg" alt="lion">
+                <figcaption>Lion</figcaption>
+                <div class="information">
+                    <p><span class="bold">Type:</span> Mammals</p>
+                    <p><span class="bold">Group:</span> Big Cats</p>
+                    <p><span class="bold">Habitat:</span> African savannas, grasslands, open woodland</p>
+                    <p><span class="bold">Diet:</span> Carnivore (meat eaters)</p>
+                    <p><span class="bold">Average Lifespan:</span> 10-14 years in wild, longer in zoo</p>
+                    <p><span class="bold">Size:</span> 120-250 kg</p>
+                    <p><span class="bold">Fun Fact:</span> A lion's mane can make it look larger and may signal age and health.</p>
+                    <h3>
+                        Basic Information
+                    </h3>
+                    <ul>
+                        <li>Lions live in social groups called <strong>prides</strong>.</li>
+                        <li>A pride usually contains females, cubs, and a few males.</li>
+                        <li>Females usually do most hunting.</li>
+                    </ul>
+                    <h3>
+                        Adaptations
+                    </h3>
+                    <ul>
+                        <li>Strong night vision.</li>
+                        <li>Sharp retractable claws.</li>
+                        <li>Roaring helps defend territory.</li>
+                    </ul>
+                </div>
+              <button class="close">Close</button>
+
+            </dialog>
+            <div class="card">
+                <figure>
+                <img src="./images/elephant (1).jpg" alt="elephant">
+                <figcaption>Elephant</figcaption>
+                <p>Elephants are mammals and herbivore. They live mostly in  savsannas and forests.
+                    They live around 60-70 years in average.
+                </p>
+                <button class="read-more">Read More</button>
+                </figure>
+            </div>
+            <dialog  class="animal-details">
+                <img src="./images/elephant (1).jpg" alt="elephant">
+                <figcaption>Elephant</figcaption>
+                <div class="information">
+                    <p><span class="bold">Type:</span> Mammals</p>
+                    <p><span class="bold">Habitat:</span> Savannas and forests</p>
+                    <p><span class="bold">Diet:</span> Herbivore</p>
+                    <p><span class="bold">Average Lifespan:</span>Around 60-70 years</p>
+                    <p><span class="bold">Size:</span> 120-250 kg</p>
+                    <p><span class="bold">Fun Fact:</span> Elephants communicate through low-frequency sounds over long distances.</p>
+                    <h3>
+                        Basic Information
+                    </h3>
+                    <ul>
+                        <li>Largest land animal. </li>
+                        <li>Lives in family groups led by older females.</li>
+                    </ul>
+                    <h3>
+                        Adaptations
+                    </h3>
+                    <ul>
+                        <li>Trunk used for breathing, grabbing food, drinking.</li>
+                        <li>Large ears help cool body temperature.</li>
+                    </ul>
+                </div>
+              <button class="close">Close</button>
+
+            </dialog>
+            <div class="card">
+                <figure>
+                <img src="./images/penguine (1).jpg" alt="Penguin">
+                <figcaption>Penguin</figcaption>
+                <p>Penguins are birds and eat fish. They live mostly in Antarctic regions.
+                    They live around 15-20 years.
+                </p>
+                <button class="read-more">Read More</button>
+                </figure>
+            </div>
+            <dialog  class="animal-details">
+                <img src="./images/penguine (1).jpg" alt="Penguin">
+                <figcaption>Penguin</figcaption>
+                <div class="information">
+                    <p><span class="bold">Type:</span> Birds</p>
+                    <p><span class="bold">Habitat:</span>Antarctic regions</p>
+                    <p><span class="bold">Diet:</span> Fish ,squid and krill</p>
+                    <p><span class="bold">Average Lifespan:</span> Around 15-20 years</p>
+                    <p><span class="bold">Size:</span> 120-250 kg</p>
+                    <p><span class="bold">Fun Fact:</span> Emperor penguin fathers help protect eggs during harsh winter conditions.</p>
+                    <h3>
+                        Basic Information
+                    </h3>
+                    <ul>
+                        <li>Penguins cannot fly but are excellent swimmers.</li>
+                        <li>They live in large colonies.</li>
+                    </ul>
+                    <h3>
+                        Adaptations
+                    </h3>
+                    <ul>
+                        <li>Dense waterproof feathers.</li>
+                        <li>Thick fat layer for insulation.</li>
+                    </ul>
+
+                </div>
+              <button class="close">Close</button>
+
+            </dialog>
+        </section>
+         <a class="anchor" href="./animals.html">See All Animals</a>
+        </section>
+        <hr>
+        <div class="ticket-purchase">
+
+           <section id="buy-tickets">
+              <div class="card">
+                <span class="price">Rs. 100</span>
+                <span>For single person</span>
+                <div>
+                  <button class="minus">-</button>
+
+                  <span class="count">0</span>
+
+                  <button class="plus">+</button>
+               </div>
+              </div>
+              <div class="card">
+                <span class="price">FREE</span>
+                <span>For kids under 5 an elderly</span>
+              </div>
+              <div class="card">
+                <span class="price">Rs. 250</span>
+                <span>For group of 3 people </span>
+                <div>
+                  <button class="minus">-</button>
+
+                  <span class="count">0</span>
+
+                  <button class="plus">+</button>
+               </div>
+              </div>
+
+           </section>
+          <button >Purchase Ticket</button>
+
+        </div>
+        <section class="tour">
+            <h4 class="orange"> PLAN YOUR DAY </h4>
+            <span>A personal guide through every habitat</span>
+            <p class="white">Have a personal tour guide with you giving tour around all habitats in zoo.Meet all our animals.</p>
+            <nav>
+            <button>View Zoo Map</button>
+            <button>Book Tour</button>
+            </nav>
+        </section>
+        
+        <script src="./script.js"></script>
+
+    </body>
+</html>
