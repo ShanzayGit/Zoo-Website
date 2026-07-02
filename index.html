@@ -8,7 +8,7 @@
     </head>
     <body>
         <header>
-            <h1 id="title">🐾 WildPath Zoo</h1>
+            <h1 id="title"> 🐾 WildPath Zoo</h1>
             <nav class="navigation">
                 <a href="#buy-tickets">Buy Ticket</a>
                 <button id="sign-inBtn">Sign-in</button>
@@ -234,7 +234,7 @@
         </section>
         <hr>
         <div class="ticket-purchase">
-
+           <h2>Buy your Tickets Now!!</h2>
            <section id="buy-tickets">
               <div class="card ticket" data-price="100">
                 <span class="price">Rs. 100</span>
@@ -272,11 +272,51 @@
             <span>A personal guide through every habitat</span>
             <p class="white">Have a personal tour guide with you giving tour around all habitats in zoo.Meet all our animals.</p>
             <nav>
-            <button>View Zoo Map</button>
-            <button>Book Tour</button>
+            <button type="button" id="view-zoo-btn">View Zoo Map</button>
+            <button type="button" id="tour-btn">Book Tour</button>
             </nav>
         </section>
-        
+         <dialog class="tour-purchase">
+           <form>
+              <h2>Visitor Details:</h2>
+              <label for="full-name">Full Name (Required) </label>
+              <input type="text" id="full-name" required name="full-name">
+
+              <label for="email-id">Email for Conformation Message (Required)</label>
+              <input type="email" id="email-id" required name="email-id">
+
+              <label for="number">Phone Number </label>
+              <input type="tel" id="number" name="number">
+
+              <h2>Visit Details:</h2>
+              <label for="date-tour">Date of Visit (Required)</label>
+              <input type="date" id="date-tour" name="date" required>
+               
+              <label for="total-cost">Toatal Cost </label>
+              <input type="text" id="total-cost" name="total" value="Rs 5000" readonly>
+
+              <h2>Payment Details:</h2>
+              <label for="card-number-tour">Card Number (Required)</label>
+              <input type="text" required id="card-number-tour" name="card-number">
+
+              <label for="exp-tour">Expiry (Required)</label>
+              <input id="exp-tour" name="exp" type="text" required>
+
+              <label for="cvv-tour">CVV (Required)</label>
+              <input id="cvv-tour" name="cvv" type="text" required>
+
+              <button type="submit">Confirm and Buy</button>
+              <button type="button" id="cancel-tour">Cancel</button>
+
+            </form>
+        </dialog>
+        <dialog id="zoo-map">
+            <img src="./images/Zoo Map and Guide.png" alt="Zoo map and guide">
+            <figcaption>Zoo Map and Guide</figcaption>
+            <button type="button" id="zoo-map-cancel">Close</button>
+        </dialog>
+
+
         <script src="./script.js"></script>
 
     </body>

@@ -22,7 +22,25 @@ let ticketCards=document.querySelectorAll(".ticket");
 let numOfTickets=document.querySelector('#no-of-tickets');
 let totalPrice=document.querySelector('#total');
 let cancel=document.querySelector("#cancel");
+let cancelTour=document.querySelector('#cancel-tour');
+let purchaseTour=document.querySelector('.tour-purchase');
+let tourBtn=document.querySelector("#tour-btn");
+let viewZooBtn=document.querySelector("#view-zoo-btn");
+let zooMap=document.querySelector('#zoo-map');
+let cancelMap=document.querySelector('#zoo-map-cancel');
 let logInStatus=false;
+
+if(zooMap){
+  viewZooBtn.addEventListener('click',()=>{
+    zooMap.showModal();
+  });
+}
+
+if(cancelMap){
+    cancelMap.addEventListener('click',()=>{
+        zooMap.close();
+    });
+}
 
 function updateTicketSummary(){
     let totalCount=0;
@@ -37,6 +55,25 @@ function updateTicketSummary(){
     if(numOfTickets) numOfTickets.value=totalCount;
     if(totalPrice) totalPrice.value='$ '+totalPriceOfTickets;
 };
+
+if(purchaseTour){
+    tourBtn.addEventListener('click',()=>{
+        if(logInStatus){
+        purchaseTour.showModal();
+        }
+        else{
+        logUpDialog.showModal();
+        }
+
+    });
+}
+
+if(cancelTour){
+    cancelTour.addEventListener('click',()=>{
+    purchaseTour.close();
+    });
+}
+
 
 if(tickets){
     ticketBtn.addEventListener('click',()=>{
