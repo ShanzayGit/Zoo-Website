@@ -10,343 +10,346 @@ input{
     margin-bottom:10px;
 }
 
-@media (min-width:768px){
-    header{
-        background-color:darkgreen;
-        font:orange;
-        position:fixed;
-        display:flex;
-        align-items:center;
-        justify-content: space-around;
-        font-size:medium;
-        width:100vw;
-        top:0;
-        border-bottom:2px solid green;
-    }
-    
-    .navigation a{
-        border-radius:10px;
-        color:darkgreen;
-        font-weight: bold;
-        background-color:orange;
-        border:1.5px solid black;
-        text-decoration:none;
-        height:40px;
-        width:150px;
-        margin:10px;
-        padding:10px;
-        text-align:center;
-        display:inline-block;
-
-    }
-
-    .navigation a:hover{
-        box-shadow:0 0 10px 0 orangered;
-        cursor:pointer;
-        background-color: #ffa5009a;
-    }
-
-    .hero-section{
-        display:flex;
-        justify-content: center;
-        align-items:center;
-        flex-direction:column;
-        background-color:darkgreen;
-        text-align:center;
-        height:100vh;
-        width:100vw;
-        color:white;
-        padding:20px;
-        margin-top:60px;
-    }
-
-    .hero-section p{
-        color:white;
-        font-size:2rem;
-        padding:20px;
-    }
-
-    .info{
-        width:50%;
-       display:flex;
-       justify-content:center;
-       align-items: center;
-        flex-wrap:wrap;
-        margin:20px;
-
-    }
-
-    .info span{
-        background-color:#ffffff2a;
-        border:1px solid whitesmoke;
-        border-radius:10px;
-        margin:5px;
-        padding:10px;
-        width:250px;
-    }
-
-    .banner-info{
-        background-color:cornsilk;
-        display:flex;
-        justify-content: space-evenly;
-        align-items: center;
-        flex-wrap:wrap;
-        height:120px;
-        padding:10px;
-        width:100vw;
-    }
-
-    .banner-info span{
-        display:flex;
-        flex-direction:column;
-        align-items:center;
-    }
-
-    img{
-        height:150px;
-        width:150px;
-        object-fit:cover;
-    }
-
-    .animal-card,#buy-tickets{
+header{
+    background-color:darkgreen;
+    font:orange;
+    position:fixed;
     display:flex;
-    justify-content:center;
+    flex-wrap:wrap;
     align-items:center;
+    justify-content: space-around;
+    font-size:medium;
+    width:100vw;
+    top:0;
+    border-bottom:2px solid green;
+}
+
+.navigation a{
+    border-radius:10px;
+    color:darkgreen;
+    font-weight: bold;
+    background-color:orange;
+    border:1.5px solid black;
+    text-decoration:none;
+    height:40px;
+    width:150px;
+    margin:10px;
+    padding:10px;
+    text-align:center;
+    display:inline-block;
+
+}
+
+.navigation a:hover{
+    box-shadow:0 0 10px 0 orangered;
+    cursor:pointer;
+    background-color: #ffa5009a;
+}
+
+.hero-section{
+    display:flex;
+    justify-content: center;
+    align-items:center;
+    flex-direction:column;
+    background-color:darkgreen;
+    text-align:center;
+    height:100vh;
+    width:100vw;
+    color:white;
+    padding:20px;
+    margin-top:60px;
+}
+
+.hero-section p{
+    color:white;
+    font-size:2rem;
+    padding:20px;
+}
+
+.info{
+    width:50%;
+   display:flex;
+   justify-content:center;
+   align-items: center;
     flex-wrap:wrap;
     margin:20px;
+
+}
+
+.info span{
+    background-color:#ffffff2a;
+    border:1px solid whitesmoke;
+    border-radius:10px;
+    margin:5px;
     padding:10px;
-    width:90%;
-    text-align:center;
-    }
+    width:250px;
+}
+
+.banner-info{
+    background-color:cornsilk;
+    display:flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap:wrap;
+    height:120px;
+    padding:10px;
+    width:100vw;
+}
+
+.banner-info span{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+}
+
+img{
+    height:150px;
+    width:150px;
+    object-fit:cover;
+}
+
+.animal-card,#buy-tickets{
+display:flex;
+justify-content:center;
+align-items:center;
+flex-wrap:wrap;
+margin:20px;
+padding:10px;
+width:90%;
+text-align:center;
+}
 
 
 .card{
-    border-radius:5px;
-    border:1px solid grey;
-    box-shadow:0 4px 8px grey;
-    transition : transform 0.3s ease;
-    display:flex;
-    flex-direction:column;
-    flex-wrap:wrap;
-    padding:10px;
-    margin:20px;
-    height:450px;
-    width:250px;
-    text-align:center;
+border-radius:5px;
+border:1px solid grey;
+box-shadow:0 4px 8px grey;
+transition : transform 0.3s ease;
+display:flex;
+flex-direction:column;
+flex-wrap:wrap;
+padding:10px;
+margin:20px;
+height:450px;
+width:250px;
+max-width:100%;
+text-align:center;
 }
 
 select{
-    margin-top:100px;
-    width:200px;
-    height:50px;
-    border:2px solid orange;
-    color:darkgreen;
-    font-size:1.5em;
-    border-radius:5px;
-    }
+margin-top:100px;
+width:200px;
+max-width:100%;
+height:50px;
+border:2px solid orange;
+color:darkgreen;
+font-size:1.5em;
+border-radius:5px;
+}
 
 .animals-6,.animals-12,.animals-18,.animals-24{
-    margin-top:200px;
-    text-align:center;
-    
-    margin-left:auto;
-    margin-right:auto;
+margin-top:200px;
+text-align:center;
+
+margin-left:auto;
+margin-right:auto;
 
 }
 
 .animals{
-    height:650px;
-    width:100vw;
-    text-align:center;
-    margin:20px;
+height:650px;
+width:100vw;
+text-align:center;
+margin:20px;
 }
 
 .animals a{
-    text-decoration:none;
-    height:30px;
-    width:100px;
-    padding:10px;
-    border-radius:15px;
-    border:1px solid green;
-    box-shadow:0 3px 5px orangered;
-    background-color:orange;
-    color:darkgreen;
-    font-weight: bold;
-    margin:20px;
+text-decoration:none;
+height:30px;
+width:100px;
+padding:10px;
+border-radius:15px;
+border:1px solid green;
+box-shadow:0 3px 5px orangered;
+background-color:orange;
+color:darkgreen;
+font-weight: bold;
+margin:20px;
 }
 
 .animals a:hover{
-    background-color: #ffa5009a;
+background-color: #ffa5009a;
 }
 
 .card:hover{
-    box-shadow: 0 0 20px 0 grey;
-    transform:translateY(4px);
+box-shadow: 0 0 20px 0 grey;
+transform:translateY(4px);
 }
 
 button{
-    border-radius:15px;
-    color:darkgreen;
-    background-color:orange;
-    width:150px;
-    height:40px;
-        font-weight: bold;
-    
+border-radius:15px;
+color:darkgreen;
+background-color:orange;
+width:150px;
+height:40px;
+    font-weight: bold;
+
 }
 
 button:hover{
-    cursor:pointer;
-    box-shadow:0 0 5px 0 orangered;
-    background-color: #ffa5009a;
+cursor:pointer;
+box-shadow:0 0 5px 0 orangered;
+background-color: #ffa5009a;
 }
 
 .tour{
-    display:flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction:column;
-    height:100vh;
-    width:100vw;
-    background-color: darkgreen;
-    text-align:center;
-    font-size:2rem;
+display:flex;
+justify-content: center;
+align-items: center;
+flex-direction:column;
+height:100vh;
+width:100vw;
+background-color: darkgreen;
+text-align:center;
+font-size:2rem;
 }
 
 #buy-tickets{
-    height:400px;
+height:400px;
 }
 
 #buy-tickets .card{
-    border-radius:5px;
-    border:1px solid grey;
-    box-shadow:0 4px 8px grey;
-    transition : transform 0.3s ease;
-    display:flex;
-    flex-direction:column;
-    flex-wrap:wrap;
-    justify-content: center;
-    align-items: center;
-    padding:10px;
-    margin:20px;
-    height:300px;
-    width:250px;
-    text-align:center;
-    font-size:2rem;
-    font-style: oblique;
-     padding:20px;
+border-radius:5px;
+border:1px solid grey;
+box-shadow:0 4px 8px grey;
+transition : transform 0.3s ease;
+display:flex;
+flex-direction:column;
+flex-wrap:wrap;
+justify-content: center;
+align-items: center;
+padding:10px;
+margin:20px;
+height:300px;
+width:250px;
+max-width:100%;
+text-align:center;
+font-size:2rem;
+font-style: oblique;
+ padding:20px;
 
 }
 
 #buy-tickets button{
-    color:darkgreen;
-    background-color:orange;
-    width:20px;
-    height:20px;
-    font-weight: bold;
-    
+color:darkgreen;
+background-color:orange;
+width:20px;
+height:20px;
+font-weight: bold;
+
 }
 
 .ticket-purchase{
-    height:580px;
-    width:100vw;
-    text-align:center;
-    margin:20px;
+height:580px;
+width:100vw;
+text-align:center;
+margin:20px;
 }
 
 #buy-tickets button:hover{
-    cursor:pointer;
-    box-shadow:0 0 5px 0 orangered;
-    background-color: #ffa5009a;
+cursor:pointer;
+box-shadow:0 0 5px 0 orangered;
+background-color: #ffa5009a;
 }
 
 dialog{
-   overflow-y: scroll;
-   display:hidden;
-   flex-direction:column;
-   flex-wrap:wrap;
-   width:650px;
-   justify-content: center;
-   background-color: #fff8dc;
+overflow-y: scroll;
+display:hidden;
+flex-direction:column;
+flex-wrap:wrap;
+width:650px;
+max-width:95vw;
+justify-content: center;
+background-color: #fff8dc;
 }
 
 dialog ul li{
-    list-style: none;
+list-style: none;
 }
 dialog::backdrop{
-    filter: blur(16px);
-    background:#fff8dc6a ;
+filter: blur(16px);
+background:#fff8dc6a ;
 }
 
 .bold{
-    font-weight:bold;
+font-weight:bold;
 }
 
 hr{
-    width:100%;
-    background-color:darkgreen;
-    height:4px;
+width:100%;
+background-color:darkgreen;
+height:4px;
 }
 
 .log-in h2,.log-up h2{
-    text-align:center;
+text-align:center;
 }
 
 
 .create-account,.accountCreated{
-    text-decoration: underline;
+text-decoration: underline;
 }
 
 .create-account:hover,.accountCreated:hover{
-    cursor:pointer;
-    color:darkorange;
+cursor:pointer;
+color:darkorange;
 }
 label{
-    text-align:left;
+text-align:left;
 }
  .orange{
      color:orange;
 }
 .grey{
-    color:grey;
+color:grey;
 }
 .large{
-    font-size:4rem;
-    
+font-size:4rem;
+
 }
 .green{
-    color:darkgreen;
+color:darkgreen;
 }
 .small{
-    font-size:1rem;
+font-size:1rem;
 }
 .italic{
-    font-style: italic;
+font-style: italic;
 }
 .white{
-    color:whitesmoke;
+color:whitesmoke;
 }
 .hero-section p,.tour p{
-    width:60%;
+width:60%;
 }
 .tour span{
-    font-weight:bold;
+font-weight:bold;
 }
 
 .no-results{
-    color:orangered;
-    font-size:2em;
-    text-align:center;
-    margin:auto;
+color:orangered;
+font-size:2em;
+text-align:center;
+margin:auto;
 }
 #zoo-map img{
-    width:80vw;
-    height:80vh;
-    object-fit: fill;
+width:80vw;
+height:80vh;
+object-fit: fill;
 }
 #zoo-map{
-    height:90vh;
-    width:90vw;
-    background-color: cornsilk;
-    text-align:center;
-}
+height:90vh;
+width:90vw;
+background-color: cornsilk;
+text-align:center;
 }
