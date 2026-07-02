@@ -331,4 +331,11 @@ label{
 .tour span{
     font-weight:bold;
 }
+
+.no-results{
+    color:orangered;
+    font-size:2em;
+    text-align:center;
+    margin:auto;
+}
 }

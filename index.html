@@ -17,13 +17,12 @@
             <form>
             <div class="sign-in">
               <h2>Sign-in Form</h2>
-              <p class="green"><span aria-hidden="true">*</span>All fields are required to sign-in</p>
-              <label for="first-name-si">First Name:</label>
-              <input id="first-name-si" name="first-name" type="text" required>
-              <label for="last-name-si">Last Name:</label>
-              <input id="last-name-si" name="last-name" type="text" required>
               <label for="mail-si">Email:</label>
               <input type="email" id="mail-si" name="mail" required>
+
+              <label for="password">Password:</label>
+              <input type="password" id="password" name="password">
+
               <button type="submit" id="sign-in">Sign-in</button>
               <button class="closeBtn">Close</button>
               <p>Don't have an accout <span class="green create-account">Create Account</span></p>
@@ -42,10 +41,50 @@
               <input id="last-name" name="last-name" type="text" required>
               <label for="mail">Email:</label>
               <input type="email" id="mail" name="mail" required>
+              <label for="password">Password:</label>
+              <input type="password" id="password" name="password">
               <button type="submit" id="sign-up">Sign-up</button>
               <button class="closeBtn">Close</button>
               <p >Already have an accout <span class="green accountCreated">Sign-in</span></p>
             </div>
+            </form>
+        </dialog>
+
+        <dialog class="tickets">
+           <form>
+              <h2>Visitor Details:</h2>
+              <label for="full-name">Full Name (Required) </label>
+              <input type="text" id="full-name" required name="full-name">
+
+              <label for="email-id">Email for Conformation Message (Required)</label>
+              <input type="email" id="email-id" required name="email-id">
+
+              <label for="number">Phone Number </label>
+              <input type="tel" id="number" name="number">
+
+              <h2>Visit Details:</h2>
+              <label for="date">Date of Visit (Required)</label>
+              <input type="date" id="date" name="date" required>
+               
+              <label for="no-of-tickets">Number of Tickets </label>
+              <input id="no-of-tickets" type="number" readonly>
+
+              <label for="total">Toatal Cost </label>
+              <input type="text" id="total" name="total" readonly>
+
+              <h2>Payment Details:</h2>
+              <label for="card-number">Card Number (Required)</label>
+              <input type="text" required id="card-number" name="card-number">
+
+              <label for="exp">Expiry (Required)</label>
+              <input id="exp" name="exp" type="text" required>
+
+              <label for="cvv">CVV (Required)</label>
+              <input id="cvv" name="cvv" type="text" required>
+
+              <button type="submit">Confirm and Buy</button>
+              <button type="button" id="cancel">Cancel</button>
+
             </form>
         </dialog>
 
@@ -197,7 +236,7 @@
         <div class="ticket-purchase">
 
            <section id="buy-tickets">
-              <div class="card">
+              <div class="card ticket" data-price="100">
                 <span class="price">Rs. 100</span>
                 <span>For single person</span>
                 <div>
@@ -212,7 +251,7 @@
                 <span class="price">FREE</span>
                 <span>For kids under 5 an elderly</span>
               </div>
-              <div class="card">
+              <div class="card ticket" data-price="250">
                 <span class="price">Rs. 250</span>
                 <span>For group of 3 people </span>
                 <div>
@@ -225,7 +264,7 @@
               </div>
 
            </section>
-          <button >Purchase Ticket</button>
+          <button id="ticket-btn">Purchase Ticket</button>
 
         </div>
         <section class="tour">
