@@ -1,64 +1,196 @@
-# WildPath Zoo Website 🐾
+# 🐾 WildPath Zoo
 
-A multi-page zoo website featuring an animal showcase, category filtering, expandable animal details, a ticket purchase counter, and sign-in/sign-up modals.
+A responsive front-end zoo website built with **HTML, CSS, and JavaScript**. WildPath Zoo lets visitors explore animals, purchase tickets, book guided tours, view a zoo map, and learn interesting facts about wildlife through an interactive interface.
 
-## 📁 Project Structure
+## 🌟 Features
+
+* 🦁 Modern responsive landing page
+* 🎟️ Ticket purchasing system
+* ➕➖ Increase/decrease ticket quantity
+* 💰 Automatic ticket price calculation
+* 🔐 Sign Up and Sign In modal forms
+* 🦓 Animal information cards with detailed popups
+* 🔍 Filter animals by category
+* 📖 Show More / Show Less pagination on animals page
+* 🗺️ Interactive zoo map dialog
+* 🚶 Guided tour booking
+* 📱 Responsive layout using Flexbox
+* 🎨 Hover animations and clean UI
+
+---
+
+## 📂 Project Structure
 
 ```
-├── index.html       # Homepage (hero section, ticket purchase, tour info)
-├── animals.html      # Full animal listing with category filter + pagination
-├── styles.css        # Site-wide styles
-├── script.js          # Shared JS: modals, filtering, counters, pagination
-└── images/            # Animal photos
+WildPath-Zoo/
+│
+├── index.html          # Home page
+├── animals.html        # Animal gallery
+├── styles.css          # Website styling
+├── script.js           # JavaScript functionality
+├── images/
+│   ├── lion.jpg
+│   ├── elephant.jpg
+│   ├── ...
+│   └── Zoo Map and Guide.png
+└── README.md
 ```
 
-## ✨ Features
+---
 
-- **Sign-in / Sign-up modals** — toggle between the two dialogs, with a proper close button that doesn't trigger form validation.
-- **Category filter** (`animals.html` only) — filter animal cards by `data-category` (mammals, birds, reptiles, insects, etc.) using a `<select>` dropdown.
-- **Progressive pagination** — animals are grouped into sections (`.animals-6`, `.animals-12`, `.animals-18`, `.animals-24`); "Show More" reveals the next section, "Show Less" hides sections again.
-- **Read More dialogs** — each animal card opens a matching `<dialog class="animal-details">` with full info (habitat, diet, lifespan, fun facts, adaptations).
-- **Ticket counter** — plus/minus buttons increment/decrement ticket counts per ticket type.
-- **Ticket form** — Shows alert if zero tickets , form shows total price and tickets as readonly field.
+## 🚀 Technologies Used
 
-## 🛠️ Key Fixes Applied
+* HTML5
+* CSS3
+* JavaScript (ES6)
+* Dialog API
+* Flexbox
 
-Since `script.js` is shared across both `index.html` and `animals.html` (which don't have identical markup), a few guards and fixes were needed:
+---
 
-1. **Null-safe selectors** — `index.html` has no `<select>` element (the filter only exists on `animals.html`). Wrapped it in:
-   ```javascript
-   if (select) {
-       select.addEventListener("change", () => { ... });
-   }
-   ```
-   Same guard applied to `sections` before calling `.forEach()`, since `index.html` has no pagination sections either.
+## ✨ Main Functionalities
 
-2. **`closest("dialog")` instead of `parentElement`** — close buttons are nested several levels deep inside the dialog (`button` → `div` → `form` → `dialog`), so `.parentElement.close()` failed. `.closest("dialog")` reliably walks up to the actual dialog regardless of nesting depth.
+### Home Page
+
+* Hero section
+* Zoo statistics
+* Featured animals
+* Ticket purchasing section
+* Guided tour section
+* Zoo map
+
+### Animal Gallery
+
+* 20+ animals
+* Category filtering
+* Animal detail dialogs
+* Show More / Show Less navigation
+
+### Authentication
+
+* Sign Up modal
+* Sign In modal
+* Basic login state handling using JavaScript
+
+### Ticket System
+
+Users can:
+
+* Add tickets
+* Remove tickets
+* View total tickets
+* Calculate total cost automatically
+* Purchase after signing in
+
+### Guided Tour
+
+Visitors can:
+
+* View zoo map
+* Book a personal guided tour
+* Complete booking through a modal form
+
+---
+
+## 🦁 Animal Information
+
+Each animal includes:
+
+* Image
+* Habitat
+* Diet
+* Lifespan
+* Size
+* Fun facts
+* Adaptations
+* Basic information
+
+Examples include:
+
+* Lion
+* Elephant
+* Penguin
+* Giraffe
+* Zebra
+* Hippopotamus
+* Tiger
+* Rhinoceros
+* Gorilla
+* Chimpanzee
+* Red Panda
+* Koala
+* Meerkat
+* Otter
+* Giant Tortoise
+* Anaconda
+* Crocodile
+* Komodo Dragon
+* Flamingo
+* Ostrich
+* Butterfly
+* Ladybug
+* Beetle
 
 
-4. **Sign-in ↔ Sign-up toggle** — clicking "Create Account" or "Sign-in" now closes the currently open dialog before opening the other, instead of stacking both open at once:
-   ```javascript
-   signUp.addEventListener('click', () => {
-       logInDialog.close();
-       logUpDialog.showModal();
-   });
-   ```
+## 📷 Screens
 
-## ▶️ Running Locally
+* Home Page
+* Animal Gallery
+* Ticket Purchase Dialog
+* Tour Booking Dialog
+* Zoo Map
+* Animal Detail Dialogs
 
-No build step required — plain HTML/CSS/JS.
 
-1. Clone or download the project folder (keep `images/` alongside the HTML files).
-2. Open `index.html` in a browser, or serve the folder with a local server (recommended, so relative paths and dialogs behave consistently):
-   ```bash
-   npx serve .
-   ```
-3. Navigate to `animals.html` via the "Meet Animals" link to see the filter and pagination in action.
+## 📖 Future Improvements
 
-## 🧩 Possible Next Steps
+* Store user accounts using Local Storage or a backend
+* Real authentication system
+* Online payment gateway integration
+* Search animals by name
+* Favorites/Wishlist
+* Animal feeding schedules
+* Dark mode
+* Admin dashboard
+* Backend database integration
+* Responsive navigation menu
+* Form validation improvements
 
-- Split `script.js` into a shared file (modals, ticket counter) + a page-specific file (filter, pagination) to avoid null-checks entirely.
-- Add real form submission / auth handling (currently forms only trigger dialog open/close).
-- Add zoo map
-- Add functionality for book tour.
-- Make website responsive
+
+## ▶️ How to Run
+
+1. Clone the repository
+
+```bash
+git clone https://github.com/your-username/WildPath-Zoo.git
+```
+
+2. Open the project folder.
+
+3. Open `index.html` in your browser.
+
+No additional installation is required.
+
+
+## 📚 What I Learned
+
+While building this project, I practiced:
+
+* Semantic HTML
+* CSS Flexbox layouts
+* Responsive design
+* DOM manipulation
+* Event handling
+* JavaScript dialogs
+* Working with arrays and loops
+* Dynamic UI updates
+* Form handling
+* Conditional rendering
+
+
+## 👩‍💻 Author
+
+
+This project was created as a front-end web development project to strengthen HTML, CSS, and JavaScript skills through a realistic interactive website.
+
+This project is for educational and portfolio purposes.
