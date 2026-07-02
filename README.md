@@ -145,14 +145,10 @@ Examples include:
 ## 📖 Future Improvements
 
 * Store user accounts using Local Storage or a backend
-* Real authentication system
-* Online payment gateway integration
 * Search animals by name
 * Favorites/Wishlist
 * Animal feeding schedules
 * Dark mode
-* Admin dashboard
-* Backend database integration
 * Responsive navigation menu
 * Form validation improvements
 
