@@ -19,6 +19,7 @@ A multi-page zoo website featuring an animal showcase, category filtering, expan
 - **Progressive pagination** — animals are grouped into sections (`.animals-6`, `.animals-12`, `.animals-18`, `.animals-24`); "Show More" reveals the next section, "Show Less" hides sections again.
 - **Read More dialogs** — each animal card opens a matching `<dialog class="animal-details">` with full info (habitat, diet, lifespan, fun facts, adaptations).
 - **Ticket counter** — plus/minus buttons increment/decrement ticket counts per ticket type.
+- **Ticket form** — Shows alert if zero tickets , form shows total price and tickets as readonly field.
 
 ## 🛠️ Key Fixes Applied
 
@@ -59,6 +60,5 @@ No build step required — plain HTML/CSS/JS.
 - Split `script.js` into a shared file (modals, ticket counter) + a page-specific file (filter, pagination) to avoid null-checks entirely.
 - Add real form submission / auth handling (currently forms only trigger dialog open/close).
 - Add zoo map
-- Add functionality tickets purchase
 - Add functionality for book tour.
 - Make website responsive
