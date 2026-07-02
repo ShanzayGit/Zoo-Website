@@ -152,7 +152,6 @@ Examples include:
 * Responsive navigation menu
 * Form validation improvements
 
-
 ## ▶️ How to Run
 
 1. Clone the repository
