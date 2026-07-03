@@ -56,13 +56,12 @@ input{
         width:100vw;
         color:white;
         padding:20px;
-        margin-top:120px;
+        margin-top:140px;
     }
 
     .hero-section p{
         color:white;
-        font-size:2em;
-        padding:20px;
+        padding:10px;
     }
 
     .info{
@@ -82,7 +81,7 @@ input{
         margin:5px;
         padding:10px;
         width:250px;
-        max-width:50%;
+        max-width:60%;
     }
 
     .banner-info{
@@ -203,7 +202,7 @@ button:hover{
     width:100vw;
     background-color: darkgreen;
     text-align:center;
-    font-size:2em;
+    font-size:2rem;
 }
 
     
@@ -285,9 +284,6 @@ button:hover{
     text-align:center;
     margin:10px;
     }
-    .large{
-    font-size:2rem;
-}
 
     .no-results{
     color:orangered;
@@ -352,17 +348,23 @@ label{
 .small{
     font-size:1rem;
 }
-
-
+.large{
+    font-size:1rem;
+}
 
 @media (min-width:768px){
 
+    .tour{
+        font-size:2em;
+    }
     .hero-section{
         margin-top:80px;
     }
     .large{
-    font-size:4rem;
-    
+    font-size:4rem; 
+}
+.hero-section p{
+    font-size:2em;
 }
 .info{
     width:50%;
