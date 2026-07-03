@@ -149,7 +149,7 @@ Examples include:
 * Favorites/Wishlist
 * Animal feeding schedules
 * Dark mode
-* Responsive navigation menu
+* Mobile Responsive 
 * Form validation improvements
 
 ## ▶️ How to Run
